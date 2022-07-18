@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gabriel Castejon's Survey Form</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Gabriel Castejon's Survey Form</h1>
+      <p id="description" class="description-text">
+        Feedback form for the UF CS Major
+      </p>
+    </header>
+    <form id="survey-form">
+      <fieldset class="section-A">
+        <label id="name-label">
+        Name<input id="name" type="text" placeholder="Enter your name" required />
+        </label>
+        <label id="email-label">
+          Email<input id="email" type="email" placeholder="Enter your Email" required />
+        </label>
+        <label id="number-label">
+          Age (optional)<input id="number" type="number" min="13" max="120" placeholder="Age">
+        </label>
+        <label>
+          Which option best describes your current role?
+          <select id="dropdown" class="drop">
+            <option value="">Select your current role</option>
+            <option value="1">Classmate</option>
+            <option value="2">Faculty</option>
+            <option value="3">Friend</option>
+            <option value="4">Prefer not to say</option>
+            <option value="5">Other</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset class="section-B">
+        <div>
+          <p>Would you say that Gabriel is a high-acheiving student?</p>
+          <label>
+            <input name="user-recommend" class="inline" value="definitely" type="radio">Definitely
+          </label>
+          <label>
+            <input name="user-recommend" class="inline" value="maybe" type="radio">Maybe
+          </label>
+          <label>
+            <input name="user-recommend" class="inline" value="not-sure" type="radio">Not sure
+          </label>
+        </div>
+        <div>
+          <p>What would you like to him improve? (Check all that apply)</p>
+          <label><input type="checkbox" class="inline" name="improvements" value="1">Grades</label>
+          <label><input type="checkbox" class="inline" name="improvements" value="2">Extracurricular Involvement</label>
+          <label><input type="checkbox" class="inline" name="improvements" value="3">Diet</label>
+          <label><input type="checkbox" class="inline" name="improvements" value="4">Excercise Routine</label>
+        </div>
+      </fieldset>
+      <fieldset class="section-C">
+        <label>
+          Any other feedback?
+          <textarea name="further-feedback" rows="3" cols="30" placeholder="Type in your feedback here..."></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" id="submit" value="Submit"/>
+    </form>
+  </body>
+</html>
